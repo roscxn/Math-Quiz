@@ -1,6 +1,6 @@
 body {
     background-color: #B5E0EB;
-    background-image: url("https://i.ibb.co/S3wYZbs/background2.png");
+    background-image: url("https://i.ibb.co/mvMF9Nq/game-background.png");
     background-size: cover;
     background-repeat: no-repeat;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -19,7 +19,8 @@ h1 {
 }
 
 h2 {
-    text-align: justify;
+    text-align: center;
+    width:600px;
     font-size: 30px;
 }
 
@@ -28,5 +29,17 @@ h2 {
 }
 
 #timer {
-    text-align: center;
+    margin-left: 780px;
+    font-size: 70px;
+}
+
+#restart {
+    margin-left: 1350px;
+    margin-top:40px;
+    font-size: 30px;
+}
+
+#num1, #num2, #opEasy {
+    font-size: 30px;
+    
 }

@@ -63,5 +63,3 @@ input.addEventListener("keypress", function(event) {
   calculate();
 
 
-
-
