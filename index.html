@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Save The Cat</title>
     <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
+
     <!-- Main page -->
     <div class="mainPage">
         <h1>Save The Cat</h1>
@@ -15,22 +17,70 @@
         <button id="easy">Easy Peasy!!</button>
         <button id="int">Are you sure?!</button>
         <button id="hard">Not for the faint-hearted</button>
-        <img src="https://i.ibb.co/6vDfkTq/gamesupermanbig.png" width="120" height="100" />
+        
 
+    </div>
 
     <!-- Easy level page -->
     <div class="easyPage">
-        <button id="restart">restart</button>
+        <button id="restart">Restart</button>
         <div id="timer">20</div>
-        <div id="num1">text here</div>
-        <div id="opEasy">text here</div>
-        <div id="num2">text here</div>
-        <input type="text" id="ans">
-        <div id="prompt"></div>
 
+        <div class="easyQn">
+            <div id="num1"> </div>
+            <div id="opEasy"> </div>
+            <div id="num2"> </div>
+            <div>=</div>
+            <input type="text" id="ans">
+            
+        </div>
+        <div id="prompt"></div>
+    </div>
+
+
+    <!-- Intermediate page -->
+
+    <div class="intPage">
+        <button id="restart2">Restart</button>
+        <div id="timer2">20</div>
+        
+        <div class="intQn">
+            <div id="num3"> </div>
+            <div id="opInt"> </div>
+            <div id="num4"> </div>
+            <div>=</div>
+            <input type="text" id="ans2">
+        
+        </div>
+        <div id="prompt2"></div>
     </div>
     
-
-    <script src="script.js"></script>
+<script src="script.js"></script>
+    
 </body>
 </html>
+
+
+    <!-- Hard page -->
+    
+    <div class="hardPage">
+        <button id="restart3">Restart</button>
+        <div id="timer3">20</div>
+    
+        <div class="hardQn">
+            <div id="num5"> </div>
+            <div id="opHard"> </div>
+            <div id="num6"> </div>
+            <div>=</div>
+            <input type="text" id="ans3">
+    
+        </div>
+        <div id="prompt3"></div>
+    
+    </div>
+    
+    <script src="script.js"></script>
+    
+    </body>
+    
+    </html>
