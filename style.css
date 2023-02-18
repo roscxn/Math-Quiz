@@ -1,12 +1,15 @@
 body {
-    background-color: lavender;
+    background-color: #B5E0EB;
+    background-image: url("https://i.ibb.co/S3wYZbs/background2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .mainPage {
     width: 500px;
-    margin-top: 100px;
-    margin-left: 500px;
+    margin-top: 220px;
+    margin-left: 700px;
 
 }
 
@@ -22,4 +25,8 @@ h2 {
 
 .easyPage {
     display: none;
+}
+
+#timer {
+    text-align: center;
 }

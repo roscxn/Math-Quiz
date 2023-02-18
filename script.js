@@ -14,45 +14,54 @@ document.querySelector('#restart').addEventListener("click", function() {
     location.reload();
 });
 
-// Timer -> Ref: https://stackoverflow.com/questions/31106189/create-a-simple-10-second-countdown
-let time = 5; 
+// Timer -> https://stackoverflow.com/questions/31106189/create-a-simple-10-second-countdown
+let time = 20; 
 let countDown = setInterval(function(){
     if(time === 0){
     clearInterval(countDown);
     const display = document.querySelector("#prompt");
-    display.innerText = "Time's up!";
+    display.innerText = "Time's up! You lose!";
     document.querySelector("#ans").disabled = true;
-    buttonGo.disabled = true;
   }
   document.querySelector("#timer").innerHTML = time
   time -= 1;
 }, 1000);
 
 
-
 // Question & Answer input
 
-const num1 = Math.floor(Math.random() * 10);
-document.querySelector("#num1").innerText = num1;
+let resultEasy;
 
-const num2 = Math.floor(Math.random() * 10);
-document.querySelector("#num2").innerText = num2;
+function calculate() {
+  const num1 = Math.floor(Math.random() * 10);
+  const num2 = Math.floor(Math.random() * 10);
+  document.querySelector("#num1").innerText = num1;
+  document.querySelector("#num2").innerText = num2;
+  document.querySelector("#opEasy").innerText = "+";
+  resultEasy = num1 + num2;
+}
 
-let operators = ["+", "-", "x"];
-const randomOperator = operators[Math.floor(Math.random() * operators.length)];
-document.querySelector("#operator").innerText = randomOperator;
+// Press "enter" using keyboard -> https://www.w3schools.com/howto/howto_js_trigger_button_enter.asp
 
-const buttonGo = document.querySelector("#go");
 
-buttonGo.addEventListener("click", function() {
-    const input = document.querySelector("#ans");
-    const display = document.querySelector("#prompt");
-  
-    if (input.value === "calculation") {
+const input = document.querySelector("#ans");
+const display = document.querySelector("#prompt");
+input.addEventListener("keypress", function(event) {
+  if (event.key === "Enter") {
+  event.preventDefault();
+  if (input.value == resultEasy) {
+        calculate();
         display.innerText = "Correct";
-    }
-    else {
+      }
+  else {
+        calculate();
         display.innerText = "Wrong";
     }
+    input.value = "";
+  }});
 
-});
+  calculate();
+
+
+
+
