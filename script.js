@@ -6,20 +6,19 @@ let resultHard;
 function calculate() {
   const num1 = Math.floor(Math.random() * 10);
   const num2 = Math.floor(Math.random() * 10);
-  const num3 = Math.floor(Math.random() * 100);
-  const num4 = Math.floor(Math.random() * 100);
+  const num3 = Math.floor(Math.random() * 10);
   document.querySelector("#num1").innerText = num1;
   document.querySelector("#num2").innerText = num2;
-  document.querySelector("#num3").innerText = num3;
-  document.querySelector("#num4").innerText = num4;
-  document.querySelector("#num5").innerText = num3;
-  document.querySelector("#num6").innerText = num2;
+  document.querySelector("#num3").innerText = num2;
+  document.querySelector("#num4").innerText = num3;
+  document.querySelector("#num5").innerText = num2;
+  document.querySelector("#num6").innerText = num3;
   document.querySelector("#opEasy").innerText = "+";
   document.querySelector("#opInt").innerText = "+";
   document.querySelector("#opHard").innerText = "x";
   resultEasy = num1 + num2;
-  resultInt = num3 + num4;
-  resultHard = num3 * num2;
+  resultInt = num2 + num3;
+  resultHard = num2 * num3;
 }
 
 // Restart Button
@@ -41,7 +40,12 @@ function moveUp() {
 }
 
 function moveDown() { 
+if (superHero.style.top >= "650px"){
+    superHero.style.top = "650px";
+}
+else {
   superHero.style.top = parseInt(superHero.style.top) + 40 + "px";
+}
 }
 
 //** ----- Easy level ----- **
@@ -52,7 +56,7 @@ buttonEasy.addEventListener("click", function(){
   restartGame.style.display = "block";
   // Timer -> https://stackoverflow.com/questions/31106189/create-a-simple-10-second-countdown
 
-let time = 20; 
+let time = 30; 
 let countDown = setInterval(function(){
   if(time === 0){
   clearInterval(countDown);
@@ -75,7 +79,6 @@ let correctAns = [];
 const input = document.querySelector("#ans");
 const display = document.querySelector("#prompt");
 input.addEventListener("keypress", function(event) {
-  
   if (event.key === "Enter") {
   event.preventDefault();
   if (input.value == resultEasy) {
@@ -92,8 +95,7 @@ input.addEventListener("keypress", function(event) {
     }
     input.value = "";
   if (correctAns.length == 10) {
-     superHero.style.left = "450px";
-     superHero.style.top = "250px";
+     superHero.style.left = "450px"
   }
   else if (correctAns.length == 11) {
   display.innerText = "You win!";
@@ -117,12 +119,18 @@ buttonInt.addEventListener("click", function(){
   document.querySelector(".mainPage").style.display = "none";
   document.querySelector(".intPage").style.display = "block";
   restartGame.style.display = "block";
-let time2 = 35; 
+let time2 = 40; 
 let countDown2 = setInterval(function(){
     if(time2 === 0){
     clearInterval(countDown2);
     const display2 = document.querySelector("#prompt2");
     display2.innerText = "Time's up! You lose!";
+    superHero.style.top = "670px";
+    superHero.style.left = "550px";
+    superHero.style.transform = "rotate(70deg)";
+    cat.style.transform = "rotate(300deg)";
+    cat.style.left = "350px";
+    cat.style.top = "230px";
     document.querySelector("#ans2").disabled = true;
   }
   document.querySelector("#timer2").innerHTML = time2;
@@ -130,6 +138,7 @@ let countDown2 = setInterval(function(){
 }, 1000);
 });
 
+let correctAns2 = [];
 const input2 = document.querySelector("#ans2");
 const display2 = document.querySelector("#prompt2");
 input2.addEventListener("keypress", function(event2) {
@@ -138,16 +147,34 @@ input2.addEventListener("keypress", function(event2) {
   if (input2.value == resultInt) {
         calculate();
         display2.innerText = "Correct";
+        correctAns2.push('2');
         moveUp();
-      }
+  }
   else {
         calculate();
         display2.innerText = "Wrong";
+        correctAns2.pop();
+        moveDown();
     }
     input2.value = "";
-  }});
+  }
+  if (correctAns2.length == 10) {
+     superHero.style.left = "450px";
+  }
+  else if (correctAns2.length == 11) {
+  display2.innerText = "You win!";
+  clearInterval(countDown2);
+  document.querySelector("#ans2").disabled = true;
+  superHero.style.top = "350px";
+  superHero.style.left = "580px";
+  cat.style.display = "none";
+  happyCat.style.display = "block";
+  }
+  });
   calculate();
   moveUp();
+
+ 
 
 //** ----- Hard level ----- **
 const buttonHard = document.querySelector("#hard");
@@ -155,7 +182,7 @@ buttonHard.addEventListener("click", function(){
   document.querySelector(".mainPage").style.display = "none";
   document.querySelector(".hardPage").style.display = "block";
   restartGame.style.display = "block";
-  let time3 = 50; 
+  let time3 = 60; 
 let countDown3 = setInterval(function(){
     if(time3 === 0){
     clearInterval(countDown3);
