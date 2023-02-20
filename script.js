@@ -2,22 +2,24 @@
 let resultEasy;
 let resultInt;
 let resultHard;
+
 function calculate() {
   const num1 = Math.floor(Math.random() * 10);
   const num2 = Math.floor(Math.random() * 10);
   const num3 = Math.floor(Math.random() * 100);
+  const num4 = Math.floor(Math.random() * 100);
   document.querySelector("#num1").innerText = num1;
   document.querySelector("#num2").innerText = num2;
-  document.querySelector("#num3").innerText = num2;
-  document.querySelector("#num4").innerText = num3;
-  document.querySelector("#num5").innerText = num1;
+  document.querySelector("#num3").innerText = num3;
+  document.querySelector("#num4").innerText = num4;
+  document.querySelector("#num5").innerText = num3;
   document.querySelector("#num6").innerText = num2;
   document.querySelector("#opEasy").innerText = "+";
   document.querySelector("#opInt").innerText = "+";
   document.querySelector("#opHard").innerText = "x";
   resultEasy = num1 + num2;
-  resultInt = num2 + num3;
-  resultHard = num1 * num2;
+  resultInt = num3 + num4;
+  resultHard = num3 * num2;
 }
 
 // Restart Button
@@ -27,7 +29,8 @@ restartGame.addEventListener("click", function() {
 });
 
 // Superhero -> Moving image ref: https://www.includehelp.com/code-snippets/move-object-with-arrow-keys-using-javascript-function.aspx#:~:text=Move%20object%20(image)%20with%20arrow,moved%20on%20the%20browser%20screen.
-
+const cat = document.querySelector("#cat");
+const happyCat = document.querySelector("#happyCat");
 const superHero = document.querySelector("#superhero");
   superHero.style.position = "absolute";
   superHero.style.left = "530px";
@@ -37,6 +40,9 @@ function moveUp() {
   superHero.style.top = parseInt(superHero.style.top) - 40 + "px";
 }
 
+function moveDown() { 
+  superHero.style.top = parseInt(superHero.style.top) + 40 + "px";
+}
 
 //** ----- Easy level ----- **
 const buttonEasy = document.querySelector("#easy");
@@ -45,37 +51,64 @@ buttonEasy.addEventListener("click", function(){
   document.querySelector(".easyPage").style.display = "block";
   restartGame.style.display = "block";
   // Timer -> https://stackoverflow.com/questions/31106189/create-a-simple-10-second-countdown
+
 let time = 20; 
 let countDown = setInterval(function(){
   if(time === 0){
   clearInterval(countDown);
   const display = document.querySelector("#prompt");
   display.innerText = "Time's up! You lose!";
+  superHero.style.top = "670px";
+  superHero.style.transform = "rotate(70deg)";
+  cat.style.transform = "rotate(300deg)";
+  cat.style.left = "350px";
+  cat.style.top = "230px";
   document.querySelector("#ans").disabled = true;
   }
   document.querySelector("#timer").innerHTML = time
   time -= 1;
 }, 1000);
 
+// Enter key -> https://www.w3schools.com/howto/howto_js_trigger_button_enter.asp
+
+let correctAns = [];
 const input = document.querySelector("#ans");
 const display = document.querySelector("#prompt");
 input.addEventListener("keypress", function(event) {
+  
   if (event.key === "Enter") {
   event.preventDefault();
   if (input.value == resultEasy) {
         calculate();
         display.innerText = "Correct";
+        correctAns.push('1');
         moveUp();
-      }
+  }
   else {
         calculate();
         display.innerText = "Wrong";
-
+        correctAns.pop();
+        moveDown();
     }
     input.value = "";
+  if (correctAns.length == 10) {
+     superHero.style.left = "450px";
+     superHero.style.top = "250px";
+  }
+  else if (correctAns.length == 11) {
+  display.innerText = "You win!";
+  clearInterval(countDown);
+  document.querySelector("#ans").disabled = true;
+  superHero.style.top = "350px";
+  superHero.style.left = "580px";
+  cat.style.display = "none";
+  happyCat.style.display = "block";
+  }
   }});
   calculate();
   moveUp();
+  moveDown();
+ 
 });
 
 //** ----- Int level ----- **
@@ -84,7 +117,7 @@ buttonInt.addEventListener("click", function(){
   document.querySelector(".mainPage").style.display = "none";
   document.querySelector(".intPage").style.display = "block";
   restartGame.style.display = "block";
-let time2 = 20; 
+let time2 = 35; 
 let countDown2 = setInterval(function(){
     if(time2 === 0){
     clearInterval(countDown2);
@@ -122,7 +155,7 @@ buttonHard.addEventListener("click", function(){
   document.querySelector(".mainPage").style.display = "none";
   document.querySelector(".hardPage").style.display = "block";
   restartGame.style.display = "block";
-  let time3 = 20; 
+  let time3 = 50; 
 let countDown3 = setInterval(function(){
     if(time3 === 0){
     clearInterval(countDown3);
@@ -153,3 +186,4 @@ input3.addEventListener("keypress", function(event3) {
   }});
 calculate();
 moveUp();
+

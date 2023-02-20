@@ -1,7 +1,7 @@
 body {
     position: relative;
     background-color: #FFFFFF;
-    background-image: url("https://i.ibb.co/vHXsc9z/game-background-new2.png");
+    background-image: url("https://i.ibb.co/JzLJrjN/Ros-Game-Background.png");
     background-repeat: no-repeat;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -76,5 +76,21 @@ input {
     margin: -80px 700px;
 }
 
+#cat {
+    position: absolute;
+    width: 80px;
+    height: 55px;
+    top: 215px;
+    left: 380px;
+}
+
+#happyCat {
+    display: none;
+    position: absolute;
+    width: 80px;
+    height: 55px;
+    top: 320px;
+    left: 520px;
+}
 
 
