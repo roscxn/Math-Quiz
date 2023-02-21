@@ -5,20 +5,20 @@ let resultHard;
 
 function calculate() {
   const num1 = Math.floor(Math.random() * 10);
-  const num2 = Math.floor(Math.random() * 10);
-  const num3 = Math.floor(Math.random() * 10);
+  const num2 = Math.floor(Math.random() * 100);
+  const num3 = Math.floor(Math.random() * 100);
   document.querySelector("#num1").innerText = num1;
   document.querySelector("#num2").innerText = num2;
   document.querySelector("#num3").innerText = num2;
   document.querySelector("#num4").innerText = num3;
-  document.querySelector("#num5").innerText = num2;
+  document.querySelector("#num5").innerText = num1;
   document.querySelector("#num6").innerText = num3;
   document.querySelector("#opEasy").innerText = "+";
   document.querySelector("#opInt").innerText = "+";
   document.querySelector("#opHard").innerText = "x";
   resultEasy = num1 + num2;
   resultInt = num2 + num3;
-  resultHard = num2 * num3;
+  resultHard = num1 * num3;
 }
 
 // Restart Button
@@ -33,7 +33,7 @@ const happyCat = document.querySelector("#happyCat");
 const superHero = document.querySelector("#superhero");
   superHero.style.position = "absolute";
   superHero.style.left = "530px";
-  superHero.style.top = "730px";
+  superHero.style.top = "650px";
 
 function moveUp() { 
   superHero.style.top = parseInt(superHero.style.top) - 40 + "px";
@@ -114,29 +114,33 @@ input.addEventListener("keypress", function(event) {
 });
 
 //** ----- Int level ----- **
+
 const buttonInt = document.querySelector("#int");
 buttonInt.addEventListener("click", function(){
   document.querySelector(".mainPage").style.display = "none";
   document.querySelector(".intPage").style.display = "block";
   restartGame.style.display = "block";
+
+  // Timer
+
 let time2 = 40; 
 let countDown2 = setInterval(function(){
-    if(time2 === 0){
-    clearInterval(countDown2);
-    const display2 = document.querySelector("#prompt2");
-    display2.innerText = "Time's up! You lose!";
-    superHero.style.top = "670px";
-    superHero.style.left = "550px";
-    superHero.style.transform = "rotate(70deg)";
-    cat.style.transform = "rotate(300deg)";
-    cat.style.left = "350px";
-    cat.style.top = "230px";
-    document.querySelector("#ans2").disabled = true;
+  if(time2 === 0){
+  clearInterval(countDown2);
+  const display2 = document.querySelector("#prompt2");
+  display2.innerText = "Time's up! You lose!";
+  superHero.style.top = "670px";
+  superHero.style.transform = "rotate(70deg)";
+  cat.style.transform = "rotate(300deg)";
+  cat.style.left = "350px";
+  cat.style.top = "230px";
+  document.querySelector("#ans2").disabled = true;
   }
-  document.querySelector("#timer2").innerHTML = time2;
+  document.querySelector("#timer2").innerHTML = time2
   time2 -= 1;
 }, 1000);
-});
+
+// Enter key 
 
 let correctAns2 = [];
 const input2 = document.querySelector("#ans2");
@@ -147,7 +151,7 @@ input2.addEventListener("keypress", function(event2) {
   if (input2.value == resultInt) {
         calculate();
         display2.innerText = "Correct";
-        correctAns2.push('2');
+        correctAns2.push('1');
         moveUp();
   }
   else {
@@ -157,9 +161,8 @@ input2.addEventListener("keypress", function(event2) {
         moveDown();
     }
     input2.value = "";
-  }
   if (correctAns2.length == 10) {
-     superHero.style.left = "450px";
+     superHero.style.left = "450px"
   }
   else if (correctAns2.length == 11) {
   display2.innerText = "You win!";
@@ -170,31 +173,43 @@ input2.addEventListener("keypress", function(event2) {
   cat.style.display = "none";
   happyCat.style.display = "block";
   }
-  });
+  }});
   calculate();
   moveUp();
+  moveDown();
+ 
+});
 
  
-
 //** ----- Hard level ----- **
 const buttonHard = document.querySelector("#hard");
 buttonHard.addEventListener("click", function(){
   document.querySelector(".mainPage").style.display = "none";
   document.querySelector(".hardPage").style.display = "block";
   restartGame.style.display = "block";
-  let time3 = 60; 
+
+  // Timer
+
+let time3 = 60; 
 let countDown3 = setInterval(function(){
-    if(time3 === 0){
-    clearInterval(countDown3);
-    const display3 = document.querySelector("#prompt3");
-    display3.innerText = "Time's up! You lose!";
-    document.querySelector("#ans3").disabled = true;
+  if(time3 === 0){
+  clearInterval(countDown3);
+  const display3 = document.querySelector("#prompt3");
+  display3.innerText = "Time's up! You lose!";
+  superHero.style.top = "670px";
+  superHero.style.transform = "rotate(70deg)";
+  cat.style.transform = "rotate(300deg)";
+  cat.style.left = "350px";
+  cat.style.top = "230px";
+  document.querySelector("#ans3").disabled = true;
   }
-  document.querySelector("#timer3").innerHTML = time3;
+  document.querySelector("#timer3").innerHTML = time3
   time3 -= 1;
 }, 1000);
-});
 
+// Enter key 
+
+let correctAns3 = [];
 const input3 = document.querySelector("#ans3");
 const display3 = document.querySelector("#prompt3");
 input3.addEventListener("keypress", function(event3) {
@@ -203,14 +218,31 @@ input3.addEventListener("keypress", function(event3) {
   if (input3.value == resultHard) {
         calculate();
         display3.innerText = "Correct";
+        correctAns3.push('1');
         moveUp();
-      }
+  }
   else {
         calculate();
         display3.innerText = "Wrong";
+        correctAns3.pop();
+        moveDown();
     }
     input3.value = "";
+  if (correctAns3.length == 10) {
+     superHero.style.left = "450px"
+  }
+  else if (correctAns3.length == 11) {
+  display3.innerText = "You win!";
+  clearInterval(countDown3);
+  document.querySelector("#ans3").disabled = true;
+  superHero.style.top = "350px";
+  superHero.style.left = "580px";
+  cat.style.display = "none";
+  happyCat.style.display = "block";
+  }
   }});
-calculate();
-moveUp();
-
+  calculate();
+  moveUp();
+  moveDown();
+ 
+});
