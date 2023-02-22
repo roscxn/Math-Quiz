@@ -4,12 +4,11 @@ We do basic mental calculations on a daily basis, but how good are we actually?
 
 Hello there, welcome to my page! As a math tutor, I have always wanted to create an engaging game that not only stimulates the mind, but is also enjoyable. "Save The Cat" is a game that tests your mental calculation abilities and reflexes. With adorable graphics and a simple storyline, my main target audience would be for players who are looking for a fun game to build up on their math foundation. If you are looking to challenge yourself and bring your mental calculation skills to the next level, this is definitely a game for you!
 
-## Project Description 
+## Screenshots
 
 ![image](https://user-images.githubusercontent.com/114375385/220508957-87a9801e-d90c-4f11-88ba-6970d1a77b38.png)
 
 ![image](https://user-images.githubusercontent.com/114375385/220516905-8ac24089-b546-48dc-ac6b-d96353d49ee7.png)
-
 
 
 ## Technologies Used: 
@@ -24,7 +23,7 @@ Hello there, welcome to my page! As a math tutor, I have always wanted to create
 2. Choose your desired level
 3. Numbers and arithmetic operators will be randomly generated each round.
 4. Type in your answer into the input box and press "enter" on your keyboard to submit.
-5. A correct answer will enable the superhero to fly higher, while an incorrect answer will cause the hero to fall lower.
+5. A correct answer will enable the superhero to fly higher and nearer to the cat, while an incorrect answer will cause the hero to fall lower.
 6. Answer 11 questions correctly within the time limit, or you lose.
 
 ## Future Enhancements
