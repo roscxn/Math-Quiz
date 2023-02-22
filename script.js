@@ -5,23 +5,34 @@ let resultHard;
 
 function calculate() {
   const num1 = Math.floor(Math.random() * 10);
-  const num2 = Math.floor(Math.random() * 100);
+  const num2 = Math.floor(Math.random() * 10);
   const num3 = Math.floor(Math.random() * 100);
+  const num4 = Math.floor(Math.random() * 100);
   document.querySelector("#num1").innerText = num1;
   document.querySelector("#num2").innerText = num2;
-  document.querySelector("#num3").innerText = num2;
-  document.querySelector("#num4").innerText = num3;
-  document.querySelector("#num5").innerText = num1;
-  document.querySelector("#num6").innerText = num3;
-  document.querySelector("#opEasy").innerText = "+";
-  document.querySelector("#opInt").innerText = "+";
-  document.querySelector("#opHard").innerText = "x";
-  resultEasy = num1 + num2;
-  resultInt = num2 + num3;
-  resultHard = num1 * num3;
+  document.querySelector("#num3").innerText = num3;
+  document.querySelector("#num4").innerText = num2;
+  document.querySelector("#num5").innerText = num3;
+  document.querySelector("#num6").innerText = num4;
+
+  const operator = ["+", "-"];
+  const operatorRandom = operator[Math.floor(Math.random() * operator.length)];
+  document.querySelector("#opEasy").innerText = operatorRandom;
+  document.querySelector("#opInt").innerText = operatorRandom;
+  document.querySelector("#opHard").innerText = operatorRandom;
+
+  if (operatorRandom === "+") {
+    resultEasy = num1 + num2;
+    resultInt = num3 + num2;
+    resultHard = num3 + num4;
+  }
+  else if (operatorRandom === "-") {
+    resultEasy = num1 - num2;
+    resultInt = num3 - num2;
+    resultHard = num3 - num4;
+  }
 }
 
-// Restart Button
 const restartGame = document.querySelector('#restart');
 restartGame.addEventListener("click", function() {
   location.reload();
@@ -54,9 +65,10 @@ buttonEasy.addEventListener("click", function(){
   document.querySelector(".mainPage").style.display = "none";
   document.querySelector(".easyPage").style.display = "block";
   restartGame.style.display = "block";
-  // Timer -> https://stackoverflow.com/questions/31106189/create-a-simple-10-second-countdown
+  
+ // Timer -> https://stackoverflow.com/questions/31106189/create-a-simple-10-second-countdown
 
-let time = 30; 
+let time = 20; 
 let countDown = setInterval(function(){
   if(time === 0){
   clearInterval(countDown);
@@ -123,7 +135,7 @@ buttonInt.addEventListener("click", function(){
 
   // Timer
 
-let time2 = 40; 
+let time2 = 20; 
 let countDown2 = setInterval(function(){
   if(time2 === 0){
   clearInterval(countDown2);
@@ -190,7 +202,7 @@ buttonHard.addEventListener("click", function(){
 
   // Timer
 
-let time3 = 60; 
+let time3 = 30; 
 let countDown3 = setInterval(function(){
   if(time3 === 0){
   clearInterval(countDown3);
