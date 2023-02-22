@@ -50,16 +50,16 @@ Hello there, welcome to my page! As a math tutor, I have always wanted to create
 
 #### Day 2:
 * Creation of images and background
-* Matching the CSS and HTML according to the images
+* Matching the CSS and HTML accordingly
 * Javascript functions for restart button, game level buttons, countdown timer and losing message prompt 
 
 #### Day 3: 
 * Javascript functions on winning conditions
-* Superhero "flying" up and down for correct and wrong answers
+* Superhero moving" up and down for correct and wrong answers
 
 #### Day 4:
-* Customization of winning and losing scenes using javascript codes
-* Modification of some javascript functions for efficiency
+* Customization of winning and losing scenes using Javascript codes
+* Combination of javascript functions for efficiency
 
 #### Day 5:
 * Update on README file
