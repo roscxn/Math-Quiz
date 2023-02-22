@@ -6,7 +6,7 @@ Hello there, welcome to my page! As a math tutor, I have always wanted to create
 
 ## How To Play
 
-1. Access the game by clicking onto this link: https://roscxn.github.io/Math-Quiz/
+1. Access the game by clicking onto this link: https://roscxn.github.io/Save-The-Cat-Math-Quiz/
 2. Choose your desired level
 3. Numbers and arithmetic operators will be randomly generated each round. (Example: 2 + 3 = ___)
 4. Using your keyboard, type your answer into the input box and press "enter" to submit.
