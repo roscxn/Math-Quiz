@@ -25,6 +25,7 @@ Hello there, welcome to my page! As a math tutor, I have always wanted to create
 4. Type in your answer into the input box and press "enter" on your keyboard to submit.
 5. A correct answer will enable the superhero to fly higher and nearer to the cat, while an incorrect answer will cause the hero to fall lower.
 6. Answer 11 questions correctly within the time limit, or you lose.
+7. Feel free to restart the game if you would like another challenge.
 
 ## Future Enhancements
 
