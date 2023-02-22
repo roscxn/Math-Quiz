@@ -16,9 +16,10 @@ Hello there, welcome to my page! As a math tutor, I have always wanted to create
 
 ## Game Preview
 
-![image](https://user-images.githubusercontent.com/114375385/220508957-87a9801e-d90c-4f11-88ba-6970d1a77b38.png)
+![image](https://user-images.githubusercontent.com/114375385/220553950-f8050853-27e2-4bb8-918a-d6e59762b966.png)
+![image](https://user-images.githubusercontent.com/114375385/220553750-8c033d3e-6a2f-4826-927f-5829bc892f2d.png)
+![image](https://user-images.githubusercontent.com/114375385/220553214-d67a608f-88c2-4adf-82ea-28feae959ad8.png)
 
-![image](https://user-images.githubusercontent.com/114375385/220516905-8ac24089-b546-48dc-ac6b-d96353d49ee7.png)
 
 ## Technologies Used
 * GitHub
@@ -41,6 +42,6 @@ Hello there, welcome to my page! As a math tutor, I have always wanted to create
 
 ## Summary
 
-This is my first project after two weeks in a Software Engineering Immersive course. I am glad that General Assembly has given me this great opportunity to explore the different ways in programming. I have enjoyed myself thoroughly through this process and discovered my interest in creating applications. There is definitely a lot more for me to work on and I believe I will only get better as I progress. 
+This is my first project after two weeks in a Software Engineering Immersive course. I am glad that General Assembly has given me this great opportunity to explore the different ways in programming. I have enjoyed myself thoroughly through this process and discovered my interest in creating applications. There is definitely much room for improvement, but I believe I will only get better as I progress. 
 
 Hope you enjoy the game!
