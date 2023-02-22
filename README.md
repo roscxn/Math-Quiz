@@ -2,7 +2,7 @@
 
 We do basic mental calculations on a daily basis, but how good are we actually?
 
-Hello there, welcome to my page! As a math tutor, I have always wanted to create an engaging game that not only stimulates the mind, but is also enjoyable. "Save The Cat" is a game that tests your mental calculation abilities and reflexes. With adorable graphics and a simple storyline, my main target audience would be for players who are looking for a fun game to build up on their math foundation. If you are looking to challenge yourself and bring your mental calculation skills to the next level, this is definitely a game for you!
+Hello there, welcome to my page! As a math tutor, I have always wanted to create an engaging game that not only stimulates the mind, but is also enjoyable. "Save The Cat" is a game that tests your mental calculation abilities and reflexes. With adorable graphics and a simple storyline, my main target audience will be for players who are looking for a fun game to build up on their math foundation. If you are looking to challenge yourself and bring your mental calculation skills to the next level, this is definitely a game for you!
 
 ## Content
 [How To Play](#how-to-play)
