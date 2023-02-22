@@ -8,11 +8,13 @@ Hello there, welcome to my page! As a math tutor, I have always wanted to create
 
 "Save The Cat" comprises of three levels, each with an increasing difficulty than the previous one. Numbers and arithmetic operators will be randomly generated each round. Players will have to type in their answers into the input box and press the "enter" button on their keyboard to submit their answers. A correct answer will enable the superhero to fly higher, while an incorrect answer will cause the hero to fall lower. The objective of the game is to let the superhero fly to the cat and save the cat off the high-rise building. To achieve that, players will have to get 11 correct answers within the time limit. 
 
-![image](https://user-images.githubusercontent.com/114375385/220514195-b7f465be-9697-4037-8715-5512a1f9f6d1.png)
+![image](https://user-images.githubusercontent.com/114375385/220516905-8ac24089-b546-48dc-ac6b-d96353d49ee7.png)
 
 
 # Technologies Used: 
-
+* HTML
+* CSS
+* Javascript 
 
 
 
