@@ -51,7 +51,7 @@ Day 3 - Updated Javascript functions on winning conditions, testing out function
 
 Day 4 - Customizing the winning/ losing scenes, making sure the gameplay works for all three levels
 
-Day 5 - Updates on README file and review on current progress for further improvements
+Day 5 - Update on README file, adding subtraction function to all three levels
 
 Day 6 -
 
