@@ -8,8 +8,8 @@ Hello there, welcome to my page! As a math tutor, I have always wanted to create
 
 1. Access the game by clicking onto this link: https://roscxn.github.io/Math-Quiz/
 2. Choose your desired level
-3. Numbers and arithmetic operators will be randomly generated each round.
-4. Type in your answer into the input box and press "enter" on your keyboard to submit.
+3. Numbers and arithmetic operators will be randomly generated each round. (Example: 2 + 3 = ___)
+4. Using your keyboard, type your answer into the input box and press "enter" to submit.
 5. A correct answer will enable the superhero to fly higher and nearer to the cat, while an incorrect answer will cause the hero to fall lower.
 6. Answer 11 questions correctly within the time limit, or you lose.
 7. Feel free to restart the game if you would like another challenge.
@@ -20,13 +20,16 @@ Hello there, welcome to my page! As a math tutor, I have always wanted to create
 
 ![image](https://user-images.githubusercontent.com/114375385/220516905-8ac24089-b546-48dc-ac6b-d96353d49ee7.png)
 
-
 ## Technologies Used
 * GitHub
 * HTML
 * CSS
 * Javascript 
 * All images are hand-drawn from scratch using https://www.pixilart.com/draw
+
+## Development Process
+
+
 
 
 ## Future Enhancements
@@ -35,3 +38,7 @@ Hello there, welcome to my page! As a math tutor, I have always wanted to create
 * Instead of 3 separate levels, make the game such that it has progressive levels 
 * Modify existing codes with more efficient functions
 * Add in a scoreboard that can store the player's high score
+
+## Summary
+
+This is my first project after learning coding for two weeks in a Software Engineering Immersive course. I am glad that General Assembly has given me this great opportunity to explore the different ways in programming. I have enjoyed myself thoroughly through this process and discovered my interest in creating applications. There is definitely a lot more for me to work on and I believe I will only get better as I progress. Hope you enjoy the game!
