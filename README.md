@@ -46,12 +46,12 @@ Hello there, welcome to my page! As a math tutor, I have always wanted to create
 #### Day 1: 
 * Planning of game structure and storyline
 * Basic HTML and CSS 
-* Javascript functions for the questions and answers
+* Javascript functions for the randmomly generated numbers and answer input
 
 #### Day 2:
 * Creation of images and background
 * Matching the CSS and HTML accordingly
-* Javascript functions for restart button, game level buttons, countdown timer and losing message prompt 
+* Javascript functions for restart button, game level buttons, enter keypress, countdown timer and losing message prompt 
 
 #### Day 3: 
 * Javascript functions on winning conditions
