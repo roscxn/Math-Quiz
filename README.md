@@ -49,7 +49,7 @@ Day 2 - Drawing of images and background, working on CSS, HTML, javascript funct
 
 Day 3 - Updated Javascript functions on winning conditions, testing out functions for Superhero "flying" up and down for correct and wrong answers
 
-Day 4 - Customizing the winning/ losing scenes, making sure the game play for all three levels can work
+Day 4 - Customizing the winning/ losing scenes, making sure the gameplay works for all three levels
 
 Day 5 - Updates on README file and review on current progress for further improvements
 
