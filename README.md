@@ -59,7 +59,7 @@ Day 6 -
 
 ## Future Enhancements
 
-* Add in more levels that include equations with brackets and different arithmetic operators
+* Add in more levels that include equations with brackets, multiplication and division operators
 * Instead of three separate levels, make the game such that it has progressive levels 
 * Modify existing codes with more efficient functions
 * Add in a scoreboard that can store the player's high score
