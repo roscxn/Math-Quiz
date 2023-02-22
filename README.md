@@ -41,4 +41,4 @@ Hello there, welcome to my page! As a math tutor, I have always wanted to create
 
 ## Summary
 
-This is my first project after learning coding for two weeks in a Software Engineering Immersive course. I am glad that General Assembly has given me this great opportunity to explore the different ways in programming. I have enjoyed myself thoroughly through this process and discovered my interest in creating applications. There is definitely a lot more for me to work on and I believe I will only get better as I progress. Hope you enjoy the game!
+This is my first project after two weeks in a Software Engineering Immersive course. I am glad that General Assembly has given me this great opportunity to explore the different ways in programming. I have enjoyed myself thoroughly through this process and discovered my interest in creating applications. There is definitely a lot more for me to work on and I believe I will only get better as I progress. Hope you enjoy the game!
