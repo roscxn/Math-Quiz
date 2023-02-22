@@ -44,10 +44,15 @@ Hello there, welcome to my page! As a math tutor, I have always wanted to create
 ## Development Process
 
 Day 1 - Planning the game structure and basic layout, coding basic HTML and CSS, testing out javascript functions for questions and answers
+
 Day 2 - Drawing of images and background, working on CSS, HTML, and javascript functions for countdown timer and losing message prompt 
+
 Day 3 - Updated Javascript functions on winning conditions, testing out functions for Superhero "flying" up and down for correct and wrong answers
+
 Day 4 - Customizing the winning/ losing scenes, making sure the game play for all three levels can work
+
 Day 5 - Updates on README file and review on current progress for further improvements
+
 Day 6 -
 
 
