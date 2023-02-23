@@ -65,9 +65,9 @@ Hello there, welcome to my page! As a math tutor, I have always wanted to create
 * Update on README file
 * Addition of randomized arithmetic operators to gameplay
 
-
 #### Day 6: 
-
+* Reviewing of codes, testing out gameplay 
+* Modification of codes to make it more simplified, yet efficient 
 
 
 ## Future Enhancements
