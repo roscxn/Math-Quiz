@@ -43,23 +43,36 @@ Hello there, welcome to my page! As a math tutor, I have always wanted to create
 
 ## Development Process
 
-Day 1 - Planning the game structure and basic layout, coding basic HTML and CSS, testing out javascript functions for questions and answers
+#### Day 1: 
+* Planning of game structure and storyline
+* Basic HTML and CSS 
+* Javascript functions for the randmomly generated numbers and answer input
 
-Day 2 - Drawing of images and background, working on CSS, HTML, javascript functions for restart button, three game levels, countdown timer and losing message prompt 
+#### Day 2:
+* Creation of images and background
+* Matching the CSS and HTML accordingly
+* Javascript functions for restart button, game level buttons, countdown timer and losing message prompt 
 
-Day 3 - Updated Javascript functions on winning conditions, testing out functions for Superhero "flying" up and down for correct and wrong answers
+#### Day 3: 
+* Javascript functions on "enter" keypress and winning conditions
+* Superhero moving" up and down for correct and wrong answers
 
-Day 4 - Customizing the winning/ losing scenes, making sure the gameplay works for all three levels
+#### Day 4:
+* Customization of winning and losing scenes using Javascript codes
+* Combination of javascript functions for efficiency
 
-Day 5 - Updates on README file and review on current progress for further improvements
+#### Day 5:
+* Update on README file
+* Addition of randomized arithmetic operators to gameplay
 
-Day 6 -
+
+#### Day 6: 
 
 
 
 ## Future Enhancements
 
-* Add in more levels that include equations with brackets and different arithmetic operators
+* Add in more levels that include equations with brackets, multiplication and division operators
 * Instead of three separate levels, make the game such that it has progressive levels 
 * Modify existing codes with more efficient functions
 * Add in a scoreboard that can store the player's high score
