@@ -45,6 +45,9 @@ Hello there, welcome to my page! As a math tutor, I have always wanted to create
 * Javascript 
 * All images are hand-drawn from scratch using https://www.pixilart.com/draw
 
+![image](https://user-images.githubusercontent.com/114375385/221099186-a2e770e2-39e8-43e2-9c14-39cb93065b8a.png)
+
+
 ## Key Ideas
 ![image](https://user-images.githubusercontent.com/114375385/221091999-0a848669-579d-4b71-be42-bc12c483dee4.png)
 
