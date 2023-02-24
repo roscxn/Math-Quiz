@@ -11,7 +11,11 @@ Hello there, welcome to my page! As a math tutor, I have always wanted to create
 
 [Technologies Used](#technologies-used)
 
+[Key Ideas](#key-ideas)
+
 [Development Process](#development-process)
+
+[Analysis Of Codes](#analysis-of-codes)
 
 [Future Enhancements](#future-enhancements)
 
@@ -41,6 +45,15 @@ Hello there, welcome to my page! As a math tutor, I have always wanted to create
 * Javascript 
 * All images are hand-drawn from scratch using https://www.pixilart.com/draw
 
+## Key Ideas
+![image](https://user-images.githubusercontent.com/114375385/221091999-0a848669-579d-4b71-be42-bc12c483dee4.png)
+
+* Color/ Game theme
+* Level buttons
+* Restart button
+* Gameplay (Generating numbers, correct and wrong message prompts)
+* Countdown Timer
+
 ## Development Process
 
 #### Day 1: 
@@ -69,6 +82,15 @@ Hello there, welcome to my page! As a math tutor, I have always wanted to create
 * Reviewing of codes, testing out gameplay 
 * Modification of codes to make it more simplified, yet efficient 
 
+## Analysis Of Codes
+
+#### Regenerating of randomized numbers and arithmetic operators
+
+![image](https://user-images.githubusercontent.com/114375385/221092865-b96fcc42-d8e0-45b7-8eb8-ca48594dca34.png)
+
+#### This event listener contains most of the gameplay functions, such as calculation of correct and wrong answers, randomizing of questions and the movements of superhero.
+
+![image](https://user-images.githubusercontent.com/114375385/221093199-d4b6c804-962a-45eb-a1ea-0e2d0781662f.png)
 
 ## Future Enhancements
 
