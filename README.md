@@ -84,13 +84,16 @@ Hello there, welcome to my page! As a math tutor, I have always wanted to create
 
 ## Analysis Of Codes
 
-#### Regenerating of randomized numbers and arithmetic operators
+#### *Regenerating of randomized numbers and arithmetic operators
+
 
 ![image](https://user-images.githubusercontent.com/114375385/221092865-b96fcc42-d8e0-45b7-8eb8-ca48594dca34.png)
 
-#### This event listener contains most of the gameplay functions, such as calculation of correct and wrong answers, randomizing of questions and the movements of superhero.
 
-![image](https://user-images.githubusercontent.com/114375385/221093199-d4b6c804-962a-45eb-a1ea-0e2d0781662f.png)
+#### *This event listener contains most of the gameplay functions, such as the calculation of correct and wrong answers, randomizing of questions and the movements of superhero.
+
+
+![image](https://user-images.githubusercontent.com/114375385/221095033-45a2ae11-61de-42b0-a608-407c851c9941.png)
 
 ## Future Enhancements
 
